@@ -13,11 +13,12 @@
         android:layout_height="50dp">
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spinner_location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown"
             android:overScrollMode="never"
+            android:scrollbarSize="10dp"
             android:dropDownWidth="200dp">
 
         </Spinner>

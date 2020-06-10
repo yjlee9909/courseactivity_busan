@@ -49,6 +49,7 @@ public class AddNewTripActivity extends AppCompatActivity
     EditText trip_name;
     TextView trip_date;
     Spinner trip_location;
+    Button btn_place;
     Button save;
     LinearLayout mLinearLayout;
 //  LottieAnimationView animationView;
@@ -76,17 +77,27 @@ public class AddNewTripActivity extends AppCompatActivity
         // 초기화
         trip_name = findViewById(R.id.tname);
         trip_date = findViewById(R.id.sdate);
-        trip_location = findViewById(R.id.spinner_location);
+//        trip_location = findViewById(R.id.spinner_location);
         save = findViewById(R.id.ok);
         mLinearLayout = findViewById(R.id.linear_layout);
 //      animationView = findViewById(R.id.animation_view);
 
-        // spinner
-        trip_location.setPrompt("Select Item");
+        //list button
+        btn_place = findViewById(R.id.btn_place);
+        btn_place.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddNewTripActivity.this, PlaceList.class);
+                startActivity(intent);
+            }
+        });
 
-        spinnerAdapter = ArrayAdapter.createFromResource(this, R.array.prompt_gu, android.R.layout.simple_spinner_item);
-        spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        trip_location.setAdapter(spinnerAdapter);
+//        // spinner
+//        trip_location.setPrompt("Select Item");
+//
+//        spinnerAdapter = ArrayAdapter.createFromResource(this, R.array.prompt_gu, android.R.layout.simple_spinner_item);
+//        spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        trip_location.setAdapter(spinnerAdapter);
 
 //      SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mHandler = new Handler(Looper.getMainLooper());
@@ -181,24 +192,24 @@ public class AddNewTripActivity extends AppCompatActivity
 
                 break;
 
-            case R.id.spinner_location:
-                trip_location.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
-                    @Override
-                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                        trip_location.setSelection(0);
-
-                        if (!mInitSpinner) {
-                            mInitSpinner = true;
-                        }
-
-                        mLocation = trip_location.getSelectedItem().toString();
-                    }
-
-                    @Override
-                    public void onNothingSelected(AdapterView<?> parent) {
-                    }
-                });
-                break;
+//            case R.id.spinner_location:
+//                trip_location.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
+//                    @Override
+//                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//                        trip_location.setSelection(0);
+//
+//                        if (!mInitSpinner) {
+//                            mInitSpinner = true;
+//                        }
+//
+//                        mLocation = trip_location.getSelectedItem().toString();
+//                    }
+//
+//                    @Override
+//                    public void onNothingSelected(AdapterView<?> parent) {
+//                    }
+//                });
+//                break;
         }
     }
 

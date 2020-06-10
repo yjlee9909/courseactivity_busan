@@ -104,17 +104,35 @@
         -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <Spinner
-                android:id="@+id/spinner_location"
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tripplace"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:overScrollMode="never"
-                android:scrollbarSize="10dp"
-                android:spinnerMode="dropdown" />
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:background="?attr/editTextBackground"
+                android:hint="Select Place"
+                android:textColor="?attr/editTextColor" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="선택"
+                android:textColor="#ffffff"
+                android:onClick="showDatePickerDialog"
+                android:id="@+id/btn_place"
+                android:background="@color/colorPrimary"/>
 
         </LinearLayout>
 

@@ -9,8 +9,17 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="50dp">
+
+        <Button
+            android:text="지역분류"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="#77DFC8A5"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
 
         <Spinner
             android:id="@+id/spinner_location"
@@ -22,6 +31,15 @@
             android:dropDownWidth="200dp">
 
         </Spinner>
+
+
+    </LinearLayout>
+
+    //검색기능
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
 
 
     </LinearLayout>

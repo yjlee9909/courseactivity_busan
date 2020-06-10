@@ -21,7 +21,8 @@ View.OnClickListener{
     private ListView listview;
     private MyAdapter adapter;
     private int[] img = {R.drawable.busan_1, R.drawable.busan_1, R.drawable.busan_1};
-    private String [] Title = {"해운대 해수욕장", "관광지", "관광지"};
+    private String [] Title = {
+            "40계단거리", "가덕도 연대봉", "감천문화마을"};
     private String [] Context = {"해운대 해수욕장에 대한 한줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명"};
 
     ArrayAdapter<CharSequence> spinnerAdapter;

@@ -20,10 +20,29 @@ View.OnClickListener{
     private String mLocation;
     private ListView listview;
     private MyAdapter adapter;
-    private int[] img = {R.drawable.busan_1, R.drawable.busan_1, R.drawable.busan_1};
+    private int[] img = {R.drawable.busan_1, R.drawable.busan_1, R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,
+            R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,
+            R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,
+            R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,
+            R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,
+            R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,
+            R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1,R.drawable.busan_1};
     private String [] Title = {
-            "40계단거리", "가덕도 연대봉", "감천문화마을"};
-    private String [] Context = {"해운대 해수욕장에 대한 한줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명"};
+            "40계단거리", "가덕도 연대봉", "감천문화마을", "광안리 해수욕장", "국립일제강제동원역사관"
+            ,"국립해양박물관", "국제시장", "다대포해수욕장", "달맞이길& 문탠로드","동래읍성"
+            ,"범어사", "보수동책방골목", "복천박물관/복천동고분군", "부네치아 장림포구", "부산아쿠아리움"
+            ,"부평깡통시장", "삼포해안길","송도해수욕장","송정해수욕장","어촌마을 청사포와 미포"
+            ,"영도대교","오륙도","용두산공원","유엔기념공원","을숙도"
+            ,"이기대 해안산책로","이터널저니","절영해안산책로","죽성성당","초량이바구길"
+            ,"태종대","해동용궁사","해운대동백섬","해운대해수욕장","흰여울문화마을"};
+    private String [] Context = {
+            "해운대 해수욕장에 대한 한줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명"
+            , "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명"
+            , "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명"
+            , "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명"
+            , "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명"
+            , "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명"
+            , "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명", "관광지 한 줄 설명"};
 
     ArrayAdapter<CharSequence> spinnerAdapter;
     boolean mInitSpinner;

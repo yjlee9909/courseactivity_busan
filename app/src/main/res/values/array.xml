@@ -3,6 +3,7 @@
     <string name="prompt_gu">행정구역을 선택하세요</string>
 
     <string-array name="prompt_gu">
+        <item>부산 해운대구</item>
         <item>부산 강서구</item>
         <item>부산 금정구</item>
         <item>부산 기장군</item>
@@ -18,7 +19,7 @@
         <item>부산 연제구</item>
         <item>부산 영도구</item>
         <item>부산 중구</item>
-        <item>부산 해운대구</item>
+
     </string-array>
 
 </resources>

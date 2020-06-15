@@ -4,16 +4,16 @@ import android.graphics.drawable.Drawable;
 
 public class MyItem {
 
-    private Drawable icon;
+    private Drawable img;
     private String name;
     private String contents;
 
-    public Drawable getIcon() {
-        return icon;
+    public Drawable getImg() {
+        return img;
     }
 
     public void setIcon(Drawable img) {
-        this.icon = icon;
+        this.img = img;
     }
 
     public String getName(){

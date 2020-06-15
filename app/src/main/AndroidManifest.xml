@@ -12,6 +12,11 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ui.mytrip.AddNewTripActivity" />
         <activity android:name=".ui.mytrip.PlaceList" />
+        <activity android:name=".ui.mytrip.PlaceListSecond" />
+        <activity android:name=".ui.mytrip.PlaceListThird" />
+        <activity android:name=".ui.mytrip.AddFirstTripActivity" />
+        <activity android:name=".ui.mytrip.AddSecondTripActivity" />
+        <activity android:name=".ui.mytrip.AddThirdTripActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.mytrip.PlaceList"
+    tools:context=".ui.mytrip.PlaceListSecond"
     android:orientation="vertical">
 
     <LinearLayout
@@ -33,7 +33,7 @@
         </Spinner>
 
         <Button
-            android:id="@+id/btn_ok_first"
+            android:id="@+id/btn_thirdok"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="확인"

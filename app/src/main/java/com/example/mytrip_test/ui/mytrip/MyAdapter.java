@@ -16,8 +16,11 @@ import java.util.ArrayList;
 
 public class MyAdapter extends BaseAdapter {
 
-    private ArrayList<MyItem> mItems = new ArrayList<>();
+    private ArrayList<MyItem> mItems = new ArrayList<MyItem>();
 
+    public MyAdapter() {
+
+    }
 
     @Override
     public int getCount() {
@@ -51,7 +54,7 @@ public class MyAdapter extends BaseAdapter {
 
         MyItem myItem = getItem(position);
 
-        image.setImageDrawable(myItem.getIcon());
+        image.setImageDrawable(myItem.getImg());
         name.setText(myItem.getName());
         content.setText(myItem.getContents());
 

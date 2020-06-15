@@ -13,13 +13,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.example.mytrip_test.R;
-import com.google.android.material.snackbar.Snackbar;
 
-public class PlaceList extends AppCompatActivity implements
+public class PlaceListSecond extends AddFirstTripActivity implements
 View.OnClickListener{
 
     Button btn_ok_first;
-    Button btn_ok_second;
+    Button btn_secondok;
     Spinner trip_location;
     private String mLocation;
     private ListView listview;
@@ -60,7 +59,7 @@ View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_place_list);
+        setContentView(R.layout.activity_place_secondlist);
 
         adapter = new MyAdapter();
         listview = (ListView) findViewById(R.id.listView);
@@ -77,17 +76,14 @@ View.OnClickListener{
         }
 
         // 초기화
-        btn_ok_first = findViewById(R.id.btn_ok_first);
-
-        btn_ok_first.setOnClickListener(new View.OnClickListener() {
+        btn_secondok = findViewById(R.id.btn_secondok);
+        btn_secondok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PlaceList.this, AddFirstTripActivity.class);
+                Intent intent = new Intent(PlaceListSecond.this, AddSecondTripActivity.class);
                 startActivity(intent);
             }
         });
-
-
 
 
 
